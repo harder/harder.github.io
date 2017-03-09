@@ -17,7 +17,9 @@
     <script src="js/metro.js"></script>
 	<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <style>
-	.avatar { width=310px; height:150px;}
+		.tile-area {
+		  overflow: auto;
+		}
     </style>
 
     <script>
@@ -34,83 +36,98 @@
 </head>
 <body>
 
- <div class="tile-area tile-area-scheme-dark fg-white" style="height: 100%; max-height: 100% !important;">
-<h1 class="tile-area-title">Kevin Harder</h1>
+ <div class="tile-area tile-area-scheme-dark fg-white" style="height: 100%;">
+<h1 class="tile-area-title fg-orange text-shadow">Kevin Harder</h1>
   
 <div class="tile-group double">
 <span class="tile-group-title">Where you can find me</span>
 <div class="tile-container">
 
-
-<div class="tile tile-square bg-blue fg-white" data-role="tile" data-effect="slideUpDown" onclick="document.location.href='https://twitter.com/KevinHarder/'">
-    <div class="tile-content iconic">
-        <div class="live-slide">
-				<span class="icon mif-twitter"></span>
-				<span class="tile-label">Twitter</span>
-		</div>
-        <div class="live-slide">
-			<a href="https://twitter.com/KevinHarder" class=""><img src="img/twitter_thumb.jpg" width="150" height="150" border="0" alt="Twitter" /></a>
-		</div>
-    </div>
-</div>
-
-
-<div class="tile tile-square bg-darkBlue fg-white" data-role="tile" data-effect="slideLeftRight" onclick="document.location.href='https://www.facebook.com/KevinHarder/'">
-    <div class="tile-content iconic">
-        <div class="live-slide">
-				<span class="icon mif-facebook"></span>
-				<span class="tile-label">Facebook</span>
-		</div>
-        <div class="live-slide">
-			<a href="https://www.facebook.com/KevinHarder/" class=""><img src="img/fb_thumb.jpg" width="150" height="150" border="0" alt="Facebook" /></a>
-		</div>
-    </div>
-</div>
-
-
-<div class="tile tile-square bg-darkCyan fg-white" data-role="tile" data-effect="slideLeftRight" onclick="document.location.href='https://www.linkedin.com/in/KevinHarder/'">
-    <div class="tile-content iconic">
-        <div class="live-slide">
+<div class="tile tile-square bg-darkCyan fg-white" data-role="tile" onclick="document.location.href='https://www.linkedin.com/in/KevinHarder/'">
+    <div class="tile-content iconic slide-up-2">
+        <div class="slide">
 				<span class="icon mif-linkedin"></span>
 				<span class="tile-label">LinkedIn</span>
 		</div>
-        <div class="live-slide">
+        <div class="slide-over">
 			<a href="https://www.linkedin.com/in/KevinHarder/" class=""><img src="img/linkedin_thumb.jpg" width="150" height="150" border="0" alt="LinkedIns" /></a>
 		</div>
     </div>
 </div>
 
-
-<div class="tile tile-square bg-grayDarker fg-white" data-role="tile" data-effect="slideLeftRight" onclick="document.location.href='https://github.com/Harder/'">
-    <div class="tile-content iconic">
-        <div class="live-slide">
+			
+<div class="tile tile-square bg-grayDarker fg-white" data-role="tile" onclick="document.location.href='https://github.com/Harder/'">
+    <div class="tile-content iconic slide-down-2">
+        <div class="slide">
 				<span class="icon mif-github"></span>
 				<span class="tile-label">GitHub</span>
 		</div>
-        <div class="live-slide">
+        <div class="slide-over">
 			<a href="https://github.com/Harder/" class=""><img src="img/github_thumb.jpg" width="150" height="150" border="0" alt="GitHub" /></a>
 		</div>
     </div>
 </div>
 
-<div class="tile tile-square bg-white" data-role="tile" onclick="document.location.href='http://stackexchange.com/users/91047/kevin-harder?tab=accounts'">
-    <div class="tile-content">
-		<div>
-			<img src="http://stackexchange.com/users/flair/91047.png" width="150" alt="profile for Kevin Harder on Stack Exchange" title="profile for Kevin Harder on Stack Exchange" />
+<div class="tile tile-square bg-blue fg-white" data-role="tile" onclick="document.location.href='https://twitter.com/KevinHarder/'">
+    <div class="tile-content iconic slide-down-2">
+        <div class="slide">
+			<span class="icon mif-twitter"></span>
+			<span class="tile-label">Twitter</span>
 		</div>
-		<div>
-			<img src="img/stackexchange_logos.jpg" width="150" height="80" alt="profile for Kevin Harder on Stack Exchange" title="profile for Kevin Harder on Stack Exchange" />
+        <div class="slide-over">
+			<a href="https://twitter.com/KevinHarder" class=""><img src="img/twitter_thumb.jpg" width="150" height="150" border="0" alt="Twitter" /></a>
 		</div>
-		<span class="tile-label">Stack Exchange</span>
+    </div>
+</div>
+
+			
+<div class="tile tile-square bg-darkBlue fg-white" data-role="tile" onclick="document.location.href='https://www.facebook.com/KevinHarder/'">
+    <div class="tile-content slide-up-2 iconic">
+        <div class="slide">
+			<span class="icon mif-facebook"></span>
+			<span class="tile-label">Facebook</span>
+		</div>
+        <div class="slide-over">
+			<div class="padding10 align-center">
+				<p><span class="mif-facebook mif-3x"></span></p>
+				<h4>Facebook</h4>
+				<div class="text-small">
+					<p>facebook.com/KevinHarder</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="tile tile-square bg-white fg-cobalt" data-role="tile" onclick="document.location.href='http://stackexchange.com/users/91047/kevin-harder?tab=accounts'">
+    <div class="tile-content iconic slide-right-2">
+        <div class="slide">
+			<span class="icon"><img src="img/stack_overflow.jpg" width="75" height="81" alt="Stack Overflow" title="Stack Overflow" /></span>
+		</div>
+        <div class="slide-over">
+			<div>
+			<br />
+			<img src="http://stackexchange.com/users/flair/91047.png?theme=clean" width="150" alt="profile for Kevin Harder on Stack Exchange" title="profile for Kevin Harder on Stack Exchange" />
+			</div>
+		</div>
+		<div class="tile-label">Stack Exchange</div>
 	</div>
 </div>
 
+<div class="tile tile-square bg-emerald fg-white" data-role="tile" onclick="document.location.href='http://live.xbox.com/en-US/Profile?gamertag=AtomicGator'">
+    <div class="tile-content slide-up-2 iconic">
+        <div class="slide">
+			<span class="icon mif-gamepad"></span>
+			<span class="tile-label">Xbox Live</span>
+		</div>
+        <div class="slide-over bg-black">
+			<div class="align-center">
+				<span><img src="https://card.exophase.com/1/1077470.png" data-role="fitImage" data-format="sd" border="0" alt="XBox Live"  /></span>
+			</div>
+			<span class="tile-label">Xbox Live</span>
+		</div>
+    </div>
 
-<div class="tile tile-wide-x tile-square-y bg-emerald fg-white" data-role="tile" onclick="document.location.href='http://live.xbox.com/en-US/Profile?gamertag=AtomicGator'">
-	<div class="tile-content iconic">
-		<span><img src="https://card.exophase.com/1/1076366.png" width="310" border="0" alt="XBox Live" /></span>
-		<span class="tile-label">XBox</span>
-	</div>
 </div>
 
 </div>
@@ -120,13 +137,15 @@
 <span class="tile-group-title">About</span>
 <div class="tile-container">
 
-	<div class="tile tile-big fg-grayDarker bg-grayLighter" data-role="tile">
+	<div class="tile tile-big fg-grayDarker bg-grayLighter">
 		<div class="tile-content" style="background: top left no-repeat; background-size: cover">
 			<div class="padding10">
-			<p>I am a technologist who loves to solve difficult problems and learn new things. Over the past 17 years I've built and managed a wide variety of software projects in multiple industries. I enjoy growing, mentoring, and leading teams as much as I like architecting nimble solutions to challenging projects.</p>
+			<h4>Professional</h4>
+			<p>I am a technologist who loves to solve difficult problems and learn new things. Over the past 17 years I've built and managed a wide variety of software projects in multiple industries. I enjoy growing, mentoring, and leading teams as much as I like architecting nimble solutions to challenging projects. You can view my full professional experience on <a href="https://www.linkedin.com/in/kevinharder/">my LinkedIn profile</a>.</p>
 			
-			<p>Currently I am working on building the modern SaaS e-commerce platform Kibo Commerce which was formerly known as Mozu. Previously I've worked at Perficient technology consulting, at Dell creating a new search platform for Dell.com, and at Telligent building enterprise social collaboration software such as Community Server and Graffiti CMS.</p>
+			<p>Currently I am working on building the modern SaaS e-commerce platform <a href="http://kibocommerce.com">Kibo Commerce</a>, which was formerly known as <a href="https://www.mozu.com/">Mozu</a>. Previously I've worked at <a href="http://dell.com">Dell</a> where I built a new search platform for Dell.com, and at <a href="http://telligent.com">Telligent</a> where I developed enterprise social collaboration software such as Community Server and Graffiti CMS.</p>
 			
+			<h4>Personal</h4>
 			<p>I live in the beautiful and fun city of Austin, Texas. I'm a father; a geek; someone who loves to learn about everything and is inquisitive about the universe; a former Floridian; an aspiring runner; a space buff; a fan of pumpkins, tacos, Gators, and beer. I have a web site that I sometimes maintain at KevinHarder.com.</p>
 			</div>
 		</div>
