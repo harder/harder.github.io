@@ -1,2 +1,3 @@
 # harder.github.io
-This is the source behind my personal web site at kevinharder.com. 
+
+This is the repo for my personal web site [kevinharder.com](https://kevinharder.com).
